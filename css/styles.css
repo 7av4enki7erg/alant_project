@@ -1,0 +1,301 @@
+{
+box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #222;
+}
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section,
+article,
+aside {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 30px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: 0;
+
+    animation: slider 9s infinite;
+}
+
+.image-slider img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.image-slider img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.image-slider img:nth-child(3) {
+    animation-delay: 6s;
+}
+
+@keyframes slider {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+figure {
+    margin: 20px 0;
+}
+
+figure img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.biography-photo {
+    float: left;
+    width: 300px;
+    margin: 0 30px 20px 0;
+}
+
+.biography-photo img {
+    width: 100%;
+    height: auto;
+}
+figure a img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+figure a img:hover {
+    transform: scale(1.03);
+}
+.float-image {
+    float: left;
+    width: 350px;
+    height: auto;
+    margin: 0 20px 10px 0;
+    border-radius: 8px;
+}
+.turing-link-image {
+    width: 370px;
+    max-width: 100%;
+    height: auto;
+}
+figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #555;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e5e7eb;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+ul {
+    padding-left: 25px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 15px 20px;
+    border-left: 4px solid #1f2937;
+    background-color: #f3f4f6;
+    font-style: italic;
+}
+
+blockquote p {
+    margin-top: 0;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+aside {
+    border-left: 4px solid #6b7280;
+    background-color: #f9fafb;
+}
+form {
+    max-width: 600px;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font: inherit;
+    transition: border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 18px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1f2937;
+    color: white;
+    cursor: pointer;
+}
+input:hover,
+textarea:hover {
+    border-color: #6b7280;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+input:valid,
+textarea:valid {
+    border-color: #16a34a;
+}
+
+input:invalid,
+textarea:invalid {
+    border-color: #dc2626;
+}
+
+button:hover {
+    background-color: #374151;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.contact-page {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 330px;
+    gap: 35px;
+
+    align-items: stretch;
+}
+
+.contact-content {
+    min-width: 0;
+}
+
+.material-column {
+    position: relative;
+    padding-top: 135px;
+    align-self: stretch;
+
+}
+
+.material-panel {
+    position: sticky;
+    top: 30px;
+
+
+
+    margin-bottom: 0;
+
+    width: 100%;
+
+    padding: 24px;
+
+    background: white;
+
+    border: none;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.14);
+}

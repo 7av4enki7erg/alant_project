@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Контакти</h1>
+
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="contact.html">Контакти</a>
+    </nav>
+</header>
+
+<main>
+
+    <div class="contact-page">
+
+        <div class="contact-content">
+
+            <section class="feedback-section">
+                <h2>Зворотний зв'язок</h2>
+
+                <form>
+                    <p>
+                        <label for="name">Ім'я:</label>
+                        <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="message">Повідомлення:</label>
+                        <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                        ></textarea>
+                    </p>
+
+                    <button type="submit">Надіслати</button>
+                    <button type="reset">Очистити</button>
+                </form>
+            </section>
+
+
+            <section class="extra-contact">
+                <h2>Додаткова інформація</h2>
+
+                <p>
+                    Ми завжди раді конструктивній критиці, новим ідеям та корисним матеріалам,
+                    які можуть зробити сайт точнішим і цікавішим. Якщо ви помітили неточність,
+                    маєте додаткове джерело або хочете запропонувати новий матеріал про Алана
+                    Тюрінга, скористайтеся формою праворуч.
+                </p>
+
+                <h3>Що можна запропонувати</h3>
+
+                <ol>
+                    <li>Посилання на надійне історичне або наукове джерело.</li>
+                    <li>Фотографію або ілюстрацію, пов'язану з Аланом Тюрінгом.</li>
+                    <li>Статтю, книгу або дослідження про його наукові роботи.</li>
+                    <li>Уточнення або виправлення інформації, розміщеної на сайті.</li>
+                    <li>Ідею для нового розділу або додаткового матеріалу.</li>
+                </ol>
+            </section>
+
+        </div>
+
+
+        <div class="material-column">
+
+            <aside class="material-panel">
+
+                <h2>Запропонувати матеріал</h2>
+
+                <form enctype="multipart/form-data">
+
+                    <p>
+                        <label for="source-name">Ваше ім'я:</label>
+                        <input
+                                type="text"
+                                id="source-name"
+                                name="source-name"
+                                required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="source-link">Посилання на джерело:</label>
+                        <input
+                                type="url"
+                                id="source-link"
+                                name="source-link"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="source-file">Завантажити файл:</label>
+                        <input
+                                type="file"
+                                id="source-file"
+                                name="source-file"
+                                accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                        >
+                    </p>
+
+                    <button type="submit">Надіслати</button>
+
+                </form>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <p>&copy; 2026 Навчальний проєкт про Алана Тюрінга</p>
+</footer>
+
+</body>
+</html>
